@@ -33,7 +33,7 @@ func DifferenceWith[T any](array1, array2 []T, comparator func(T, T) bool) []T {
 	return result
 }
 
-// Contains determines whether or not a given value is present in a given arrayx.
+// Contains determines whether a given value is present in a given arrayx.
 func Contains[T any](array []T, value T) bool {
 	for _, v := range array {
 		if reflect.DeepEqual(v, value) {
